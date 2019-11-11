@@ -2,7 +2,7 @@ import boto3
 import json
 import sys
 
-# This code is designed to live in a Lambda fucntion.
+# This code is designed to live in a Lambda fucntion. The Lambda fuction needs appropriate permissions to S3 in order to run.
 # The default lambda_handler name is used here for simplicity, but can be modified.
 def lambda_handler(event, context):
     # The following code is designed to be invoked through a CloudWatch schedule rule.
