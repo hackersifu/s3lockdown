@@ -2,9 +2,10 @@ import boto3
 import json
 import sys
 
-#The default lambda_handler name is used here for simplicity, but can be modified.
+# This code is designed to live in a Lambda fucntion.
+# The default lambda_handler name is used here for simplicity, but can be modified.
 def lambda_handler(event, context):
-    # The following code is designed to be invoked through a CloudWatch rule.
+    # The following code is designed to be invoked through a CloudWatch schedule rule.
     # The varible s3 is used in the to call the s3.buckets.all function, and the client is used within the client.put_public_access_block function.
     s3 = boto3.resource('s3')
     client = boto3.client('s3')
